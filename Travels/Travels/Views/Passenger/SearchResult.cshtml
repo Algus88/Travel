@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SearchResult</title>
+</head>
+<body>
+    <div>
+        <h3>Search result</h3>
+        <table>
+            <tr>
+                <td><p>Название книги</p></td>
+                <td><p>Автор</p></td>
+                <td><p>Цена</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in  ViewBag.Result)
+            {
+        <tr>
+            <td><p>@b.FirstName</p></td>
+            <td><p>@b.LastName</p></td>
+            <td><p>@b.MarkAuto</p></td>
+            <td><p>@b.TravelPoint1</p></td>
+            <td><p>@b.TravelPoint2</p></td>
+            <td><p>@b.TravelPoint3</p></td>
+            <td><p>@b.TravelPoint4</p></td>
+        </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
