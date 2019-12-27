@@ -16,8 +16,8 @@ namespace Travels.Controllers
             if (String.IsNullOrEmpty(requsest))
 
             {
-                var searchRequest = mock.Employees.
-                                       Where(x => x.TravelPoint1 == requsest || x.TravelPoint2 == requsest || x.TravelPoint3 == requsest || x.TravelPoint4 == requsest);
+             //   var searchRequest = mock.Employees.
+                 //                      Where(x => x.TravelRoute == requsest || x.TravelPoint2 == requsest || x.TravelPoint3 == requsest || x.TravelPoint4 == requsest);
                 //Default Search
                 //GET user's default points
                 // Put them in search model

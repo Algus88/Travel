@@ -8,7 +8,7 @@ namespace Travels.Mocks
 {
     public class EmployeeMock
     {
-        public List<Employee> Employees 
+      /*  public List<Employee> Employees 
         {
             get
             {
@@ -19,7 +19,7 @@ namespace Travels.Mocks
                new Employee { FirstName = "test3", LastName = "last", Id = "1", Password = "123", HashedPassword = Verification.HashPassword("123")  },
                 };
             }
-        }
+        }*/
     }
     
 }

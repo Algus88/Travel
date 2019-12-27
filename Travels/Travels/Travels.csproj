@@ -155,6 +155,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PassengerController.cs" />
@@ -163,14 +164,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\AppEmployeeManager.cs" />
+    <Compile Include="Infrastructure\AppRoleManager.cs" />
     <Compile Include="Mocks\DriverMock.cs" />
     <Compile Include="Mocks\EmployeeMock.cs" />
     <Compile Include="Mocks\PassengerMock.cs" />
-    <Compile Include="Mocks\Verification.cs" />
-    <Compile Include="Models\ApplicationEmployeeManager.cs" />
-    <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EmployeeContext.cs" />
-    <Compile Include="Models\EmployeeDBInitializer.cs" />
+    <Compile Include="Models\AppRole.cs" />
+    <Compile Include="Validators\CustomPasswordValidator.cs" />
+    <Compile Include="Validators\Verification.cs" />
+    <Compile Include="Models\EmployeesModels.cs" />
+    <Compile Include="Infrastructure\AppIdentityDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +181,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\StyleSheetLogin.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -185,6 +189,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\JavaScriptLogin.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -213,6 +218,7 @@
     <Content Include="Views\Employee\Login.cshtml" />
     <Content Include="Views\Passenger\Search.cshtml" />
     <Content Include="Views\Passenger\SearchResult.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
